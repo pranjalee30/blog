@@ -19,7 +19,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage : storage});
 
 router.get("/add-new",(req,res)=>{
-    return res.render("addBlog",{
+    return res.render("AddBlog",{
         user:req.user,
     });
 });
